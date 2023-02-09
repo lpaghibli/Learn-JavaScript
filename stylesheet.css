@@ -1,0 +1,144 @@
+body {
+  background-color: #2E2E2E;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.header {
+  background-color: #1C1C1E;
+  width: auto;
+  height: 100px;
+  color: #fca311;
+  display: flex;
+  padding-left: 200px;
+  font-family: 'Julius Sans One', sans-serif;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-around;
+}
+h1{
+  position: relative;
+}
+h1::before {
+  content: "";
+  width: 2px;
+  height: 50px;
+  background-color: #fca311;
+  position: absolute;
+  right: -16px;
+  top: -11px;
+}
+
+h1::after {
+  content: "";
+  width: 2px;
+  height: 10px;
+  background-color: #fca311;
+  position: absolute;
+  right: -24px;
+  top: 19px;
+}
+h2{
+  position: relative;
+  padding-right: 10px;
+  font-size: 15px;
+
+}
+h2::before {
+  content: "";
+  width: 2px;
+  height: 50px;
+  background-color: #fca311;
+  position: absolute;
+  left: -16px;
+  top: -16px;
+}
+
+h2::after {
+  content: "";
+  width: 2px;
+  height: 10px;
+  background-color: #fca311;
+  position: absolute;
+  left: -24px;
+  top: -4px;
+}
+.sidebar {
+  height: 100%;
+  width: 30px;
+  position: fixed; 
+  z-index: 1;  
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 120px;
+}
+.sidebar a {
+  padding: 20px;
+  padding-left: 40px;
+  text-decoration: none;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidebar a:hover {
+  color: #fca311;
+}
+.resizer{
+  width: 30px;
+  top: 0;
+  right: 0;
+  cursor: col-resize;
+  height: 100%;
+  position: absolute;
+  background-color: #111;
+  border-radius: 20px;
+}
+.depth{
+  background-image: url(main-background.jpg);
+  height: 550px;
+  background: rgba(2, 2, 2, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+.content {
+  z-index: 1;
+  display: flex;
+  color: white;
+  margin-left: 340px;
+}
+
+.content::before{
+  content: "";
+  width: 2px;
+  height: 300px;
+  background-color: #fca311;
+  position: absolute;
+  left: 50px;
+  top: 100px;
+}
+.content::after{
+  content: "";
+  width: 2px;
+  height: 60px;
+  background-color: #fca311;
+  position: absolute;
+  left: 65px;
+  top: 150px;
+}
+.footer {
+  background-color: #1C1C1E;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  padding-left: 340px;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 10px;
+  color: #818181;
+}
